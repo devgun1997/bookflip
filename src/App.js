@@ -1,6 +1,9 @@
 import './App.css';
-import Book from "./Components/Book";
+import Book from "./Pages/Book";
 import { pdfjs } from 'react-pdf';
+import Login from "./Pages/Login";
+import Home from "./Pages/Home";
+import PrivacyPolicy from "./Pages/PrivacyPolicy";
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
     'pdfjs-dist/build/pdf.worker.min.js',
     import.meta.url,
@@ -9,7 +12,10 @@ function App() {
   return (
       <>
           <div className="App">
-              <Book/>
+              {/*<Book />*/}
+              {/*<Login/>*/}
+              {/*{<Home/>}*/}
+            <PrivacyPolicy/>
           </div>
       </>
   );

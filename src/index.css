@@ -1,3 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .navitem__wrapper {
+    @apply relative h-[100%] w-[175px] justify-center overflow-hidden;
+  }
+
+  .navitem__wrapper::before {
+    background: conic-gradient(
+            rgba(41, 227, 198) 0deg,
+            rgb(41, 227, 198) 0deg,
+            transparent 100deg
+    );
+    color: black;
+    @apply absolute h-[150%] w-[150%] left-[-25%] top-[-25%] content-[''] animate-border-spin
+  }
+
+  .navitem__content {
+    @apply absolute flex h-[calc(100%-6px)] w-[calc(100%-6px)] top-[3px] left-[3px] justify-center items-center bg-cyan-500 backdrop-blur;
+  }
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
