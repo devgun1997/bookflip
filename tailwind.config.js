@@ -29,9 +29,14 @@ module.exports = {
             transform : 'rotate(-360deg)',
           },
         },
+        'page-flip': {
+          '0%': { backgroundPosition: '0% 0%' },
+          '100%': { backgroundPosition: '100% 0%' },
+        },
       },
       animation : {
-        'border-spin' : 'border-spin 5s linear infinite'
+        'border-spin' : 'border-spin 5s linear infinite',
+        'page-flip': 'page-flip 1s steps(2, end) infinite',
       },
     },
   },

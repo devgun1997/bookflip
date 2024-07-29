@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Navbar.module.css";
 import NavLogo from "./Components/NavLogo";
 import NavItem from "./Components/NavItem";
+import NavButton from "../Button/NavButton";
 
 function Navbar(){
     return (
@@ -16,7 +17,7 @@ function Navbar(){
                     <NavItem name="About Us" link="#about_us" />
                 </div>
                 <div className={`basis-1/4 content-center`}>
-                    <button className={`text-white border-2 border-b-white rounded p-2 hover:bg-amber-600 hover:font-bold`}> Contact Us </button>
+                    <NavButton btnText="Contact Us"/>
                 </div>
             </div>
         </>
